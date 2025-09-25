@@ -1,12 +1,18 @@
 <template>
   <div id="app">
     <router-view />
+    <ChatButton />
   </div>
 </template>
 
 <script>
+import ChatButton from './components/ChatButton.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    ChatButton
+  }
 }
 </script>
 
